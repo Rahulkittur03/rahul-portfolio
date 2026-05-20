@@ -208,7 +208,7 @@ export default function Hero() {
             },
             {
               icon: LinkedinIcon,
-              href: "https://linkedin.com/in/rahulkittur",
+              href: "https://linkedin.com/in/rahul-kittur/",
               label: "LinkedIn",
             },
             {

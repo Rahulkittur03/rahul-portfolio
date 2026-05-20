@@ -19,7 +19,7 @@ const contactInfo = [
     icon: LinkedinIcon,
     label: "LinkedIn",
     value: "linkedin.com/in/rahulkittur",
-    href: "https://linkedin.com/in/rahulkittur",
+    href: "https://linkedin.com/in/rahul-kittur/",
     color: "#0A66C2",
   },
   {

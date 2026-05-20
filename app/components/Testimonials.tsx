@@ -191,7 +191,7 @@ export default function Testimonials() {
           >
             More recommendations on{" "}
             <a
-              href="https://linkedin.com/in/rahulkittur"
+              href="https://linkedin.com/in/rahul-kittur/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-400 hover:text-indigo-300 underline underline-offset-2"

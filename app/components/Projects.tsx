@@ -5,16 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ExternalLink, Star } from "lucide-react";
 import { GithubIcon } from "./icons";
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
-
-const stagger = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.12 } },
-};
+import { fadeInUp, stagger } from "./variants";
 
 interface Project {
   title: string;
@@ -37,7 +28,7 @@ const projects: Project[] = [
     longDesc:
       "A comprehensive Android productivity application that combines multiple utilities — notes management, smart reminders, music player, live news feed, and an integrated voice assistant — all in one seamless experience.",
     tech: ["Android", "Java", "Firebase", "Android Studio", "REST APIs"],
-    github: "https://github.com/rahulkittur/multitaskar",
+    github: "https://github.com/Rahulkittur03/multitaskar",
     live: "#",
     emoji: "🤖",
     color: "#3DDC84",
@@ -51,7 +42,7 @@ const projects: Project[] = [
     longDesc:
       "An automation-focused Android tool that records user interactions using AccessibilityService, generating replayable test scripts similar to Appium. Designed for QA engineers and developers who need mobile test automation.",
     tech: ["Android", "Java", "AccessibilityService", "Automation"],
-    github: "https://github.com/rahulkittur/mobile-test-recorder",
+    github: "https://github.com/Rahulkittur03/mobile-test-recorder",
     live: "#",
     emoji: "🎬",
     color: "#6366f1",
@@ -65,7 +56,7 @@ const projects: Project[] = [
     longDesc:
       "Full-featured analytics dashboard built with React and TypeScript. Features interactive charts, data tables, dark mode, and a clean component architecture using Redux for state management.",
     tech: ["React", "TypeScript", "Redux", "Tailwind CSS", "REST APIs"],
-    github: "https://github.com/rahulkittur",
+    github: "https://github.com/Rahulkittur03",
     live: "#",
     emoji: "📊",
     color: "#8b5cf6",
@@ -79,7 +70,7 @@ const projects: Project[] = [
     longDesc:
       "A performant e-commerce application built with Next.js App Router, featuring SSR product pages, a shopping cart with Redux, Firebase authentication, and a clean checkout experience.",
     tech: ["Next.js", "TypeScript", "Firebase", "Redux", "Tailwind CSS"],
-    github: "https://github.com/rahulkittur",
+    github: "https://github.com/Rahulkittur03",
     live: "#",
     emoji: "🛒",
     color: "#f59e0b",
@@ -92,7 +83,7 @@ const projects: Project[] = [
     longDesc:
       "A clean weather app using the OpenWeatherMap API with geolocation support, animated weather icons, hourly and 7-day forecasts, and a beautiful glassmorphism UI.",
     tech: ["React", "JavaScript", "REST APIs", "CSS Modules"],
-    github: "https://github.com/rahulkittur",
+    github: "https://github.com/Rahulkittur03",
     live: "#",
     emoji: "🌤️",
     color: "#38bdf8",
@@ -105,7 +96,7 @@ const projects: Project[] = [
     longDesc:
       "A data analysis toolkit that processes CSV datasets, generates statistical summaries, and creates publication-quality visualizations using NumPy, Pandas, and Matplotlib.",
     tech: ["Python", "NumPy", "Pandas", "Matplotlib"],
-    github: "https://github.com/rahulkittur",
+    github: "https://github.com/Rahulkittur03",
     live: "#",
     emoji: "📈",
     color: "#10b981",
@@ -290,7 +281,7 @@ export default function Projects() {
           {/* GitHub CTA */}
           <motion.div variants={fadeInUp} className="text-center mt-12">
             <motion.a
-              href="https://github.com/rahulkittur"
+              href="https://github.com/Rahulkittur03"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 border border-indigo-500/30 text-indigo-400 rounded-xl hover:bg-indigo-500/10 hover:border-indigo-500/50 transition-all font-medium"

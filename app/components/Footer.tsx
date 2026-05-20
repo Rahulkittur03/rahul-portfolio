@@ -7,7 +7,7 @@ import { GithubIcon, LinkedinIcon } from "./icons";
 const socialLinks = [
   {
     icon: GithubIcon,
-    href: "https://github.com/rahulkittur",
+    href: "https://github.com/Rahulkittur03",
     label: "GitHub",
   },
   {
@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     icon: Mail,
-    href: "mailto:rahulkittur@email.com",
+    href: "mailto:rahulkittur3@email.com",
     label: "Email",
   },
 ];

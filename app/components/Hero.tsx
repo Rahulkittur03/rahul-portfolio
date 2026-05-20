@@ -203,7 +203,7 @@ export default function Hero() {
           {[
             {
               icon: GithubIcon,
-              href: "https://github.com/rahulkittur",
+              href: "https://github.com/Rahulkittur03",
               label: "GitHub",
             },
             {
@@ -213,7 +213,7 @@ export default function Hero() {
             },
             {
               icon: Mail,
-              href: "mailto:rahulkittur@email.com",
+              href: "mailto:rahulkittur3@email.com",
               label: "Email",
             },
           ].map(({ icon: Icon, href, label }) => (

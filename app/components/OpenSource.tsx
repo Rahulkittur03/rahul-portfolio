@@ -5,16 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Star, GitFork, ExternalLink } from "lucide-react";
 import { GithubIcon } from "./icons";
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
-
-const stagger = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } },
-};
+import { fadeInUp, stagger } from "./variants";
 
 const pinnedRepos = [
   {
@@ -25,7 +16,7 @@ const pinnedRepos = [
     langColor: "#ED8B00",
     stars: 12,
     forks: 3,
-    url: "https://github.com/rahulkittur/multitaskar",
+    url: "https://github.com/Rahulkittur03/multitaskar",
   },
   {
     name: "Mobile Test Recorder",
@@ -35,7 +26,7 @@ const pinnedRepos = [
     langColor: "#ED8B00",
     stars: 8,
     forks: 2,
-    url: "https://github.com/rahulkittur",
+    url: "https://github.com/Rahulkittur03",
   },
   {
     name: "React Dashboard",
@@ -45,7 +36,7 @@ const pinnedRepos = [
     langColor: "#3178C6",
     stars: 15,
     forks: 4,
-    url: "https://github.com/rahulkittur",
+    url: "https://github.com/Rahulkittur03",
   },
   {
     name: "Next.js Portfolio",
@@ -55,7 +46,7 @@ const pinnedRepos = [
     langColor: "#3178C6",
     stars: 6,
     forks: 1,
-    url: "https://github.com/rahulkittur",
+    url: "https://github.com/Rahulkittur03",
   },
 ];
 
@@ -123,7 +114,7 @@ export default function OpenSource() {
                 Contribution Graph
               </h3>
               <a
-                href="https://github.com/rahulkittur"
+                href="https://github.com/Rahulkittur03"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-400 text-sm hover:text-indigo-300 flex items-center gap-1"

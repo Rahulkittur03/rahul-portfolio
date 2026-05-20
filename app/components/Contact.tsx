@@ -5,23 +5,14 @@ import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Send, Mail, MapPin, CheckCircle, AlertCircle } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
-
-const stagger = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } },
-};
+import { fadeInUp, stagger } from "./variants";
 
 const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "rahulkittur@email.com",
-    href: "mailto:rahulkittur@email.com",
+    value: "rahulkittur3@email.com",
+    href: "mailto:rahulkittur3@email.com",
     color: "#6366f1",
   },
   {
@@ -35,7 +26,7 @@ const contactInfo = [
     icon: GithubIcon,
     label: "GitHub",
     value: "github.com/rahulkittur",
-    href: "https://github.com/rahulkittur",
+    href: "https://github.com/Rahulkittur03",
     color: "#ffffff",
   },
   {

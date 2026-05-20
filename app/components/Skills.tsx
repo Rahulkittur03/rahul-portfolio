@@ -3,16 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-};
-
-const stagger = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.07 } },
-};
+import { fadeInUp, staggerFast } from "./variants";
 
 interface Skill {
   name: string;
@@ -106,7 +97,7 @@ export default function Skills() {
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          variants={stagger}
+          variants={staggerFast}
         >
           {/* Header */}
           <motion.div variants={fadeInUp} className="text-center mb-16">
@@ -131,7 +122,7 @@ export default function Skills() {
                   <div className="flex-1 h-px bg-gradient-to-r from-indigo-500/30 to-transparent" />
                 </div>
                 <motion.div
-                  variants={stagger}
+                  variants={staggerFast}
                   className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4"
                 >
                   {skills.map((skill, i) => (
